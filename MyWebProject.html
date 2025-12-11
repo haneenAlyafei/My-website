@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-image: url(https://i.pinimg.com/474x/6d/a7/ac/6da7ac6a2bc375a6d3f34102d6281954.jpg);
+                margin: 0%;
+            }
+            #first {
+                background-image: url(https://i.pinimg.com/474x/4e/5f/0a/4e5f0a4b5f8dcf9b494e485871e3c564.jpg);
+                width: 100%;
+                height: 60px;
+                color: rgb(78, 73, 73);
+                font-size: 20px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                padding: 15px;
+                text-align: center;
+                line-height: 5px;
+                
+                
+
+            }
+
+            #second {
+                width: 100%;
+                height: 20px;
+                padding: 5px;
+                display: flex;
+                justify-content: space-around;
+            }
+
+            .icon  {
+                border-radius: 10px;
+                color: rgb(78, 77, 78);
+                background-color: rgb(255, 255, 255) ;
+                font-size: 18px;
+                border-radius: 5px;
+                width: 250px;
+                height: 50px;
+            }
+            .icon:hover{
+                background-color: rgb(241, 199, 235);
+                transition: all 2px ease;
+            }
+            
+            #thired {
+                border: 2px solid black;
+                background-color: rgb(255, 255, 255);
+                height: 600px;
+                width: 800px;
+                border-radius: 50px;
+                margin: 20px;
+                position: absolute;
+                left: 100px;
+
+            }
+
+            #one {
+                color: rgb(78, 77, 78);
+                font-size: 30px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                text-align: center;
+                line-height: 40px;
+                margin: 20px;
+
+            }
+            
+            #two {
+                color: rgb(128, 119, 131);
+                font-size: 25px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                text-align: center;
+                line-height: 3.5px;
+
+            }
+
+            #three {
+                color: rgb(128, 119, 131);
+                font-size: 25px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                text-align: center;
+                line-height: 40px;
+
+
+            }
+
+            #fourth {
+                border: 5px solid black;
+                height: 600px;
+                width: 400px;
+                border-radius: 50px;
+                margin: 20px;
+                position: absolute;
+                right: 80px;
+                background-color:rgb(255, 255, 255) ;
+                
+            }
+            
+            #login{
+                color: rgb(78, 77, 78);
+                font-size: 30px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                text-align: center;
+            }
+
+            #email {
+                color:rgb(128, 119, 131);
+                font-size: 20px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                display: flex;
+                justify-content: center;
+                
+            }
+            #pass {
+                color:rgb(128, 119, 131);;
+                font-size: 20px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                display: flex;
+                justify-content: center;
+                
+                
+
+            } 
+            input {
+                width: 200px;
+               height: 20px;
+               position: absolute;
+               left: 100px;
+               margin-top: -20px;
+               border-radius: 30px;
+               
+            }
+            
+            
+            #forget {
+                color: rgb(128, 119, 131);;
+                font-size: 15px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                text-align: center;
+                padding: 10px;
+            }
+            button{
+                padding: left 10px; ;
+            }
+            
+                
+   
+            #info{
+                border: 2px solid black;
+                width: 580px;
+                height: 50px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 25px;
+                padding: 5px;
+                text-align: center;
+                border-radius: 50px;
+                margin-top: 900px;
+                position: absolute;
+                left: 440px;
+                background-color:rgb(240, 231, 242) ;
+                color:rgb(78, 77, 78) ;
+                display: flex;
+                justify-content: center; 
+                align-items: flex-start;
+                height: 100px;
+            }
+            #box1 {
+                border: 4px solid black;
+                height: 350px;
+                width: 400px;
+                margin-top: 1100px;
+                position: absolute;
+                right: 170px;
+                border-radius: 40px;
+                background-color: rgb(255, 255, 255) ;
+                font-size: 20px;
+                line-height: 30px;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+                color: rgb(137, 129, 137);
+
+
+            }
+            #text1 {
+                font-size: 25px;
+                text-align: center;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: rgb(78, 77, 78);
+            }
+            #box2 {
+                border: 4px solid black;
+                height: 350px;
+                width: 400px;
+                margin-top: 1100px;
+                position: absolute;
+                left: 170px;
+                border-radius: 40px;
+                background-color: rgb(255, 255, 255) ;
+                font-size: 20px;
+                line-height: 30px;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+                color: rgb(137, 129, 137);
+            }
+
+            #text2 {
+                font-size: 25px;
+                text-align: center;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: rgb(78, 77, 78);
+            }
+
+            #box3 {
+                border: 4px solid black;
+                height: 350px;
+                width: 400px;
+                margin-top: 1500px;
+                position: absolute;
+                right: 170px;
+                border-radius: 40px;
+                background-color: rgb(255, 255, 255) ;
+                font-size: 20px;
+                line-height: 30px;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+                color: rgb(137, 129, 137);
+
+            }
+            #text3{
+                font-size: 25px;
+                text-align: center;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: rgb(78, 77, 78);
+                
+            }
+
+            #box4{
+                border: 4px solid black;
+                height: 350px;
+                width: 400px;
+                margin-top: 1500px;
+                position: absolute;
+                left: 170px;
+                border-radius: 40px;
+                background-color: rgb(255, 255, 255) ;
+                font-size: 20px;
+                line-height: 30px;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+                color: rgb(137, 129, 137);
+            }
+
+            #text4 {
+                font-size: 25px;
+                text-align: center;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: rgb(78, 77, 78);
+
+            }
+            #foto {
+                border: 0px solid;
+                height: 500px;
+                width: 250px;
+                border-radius: 40px;
+                margin-top: 1250px;
+                position: absolute;
+                left: 630px;
+            }
+            #mail {
+                margin-top: 2300px;
+                font-size: 20px;
+                position: absolute;
+                
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div id="first">
+
+            <div id="left">
+                <h1>Skin Care Website</h1></div>
+        </div>
+        <br>
+
+        <div id="second">
+            <button class="icon"> Home </button>
+            <button class="icon"> information </button>
+            <button class="icon"> about me </button>
+            <button class="icon"> cantant </button>
+        </div>
+        <br>
+        <br>
+        <br>
+
+        <div id="thired">
+            <div id="one"> 
+                <h2> Skin Care Website </h2>
+            </div>
+            <div id="two">
+                <h3> Hello everyone</h3><h4>my name is Haneen </h4>
+                <h4> and this is my website to help </h4>
+                    
+                <h4>you understand your skin better</h4>
+            </div>
+            <div id="three">
+                Here; at our website, we provide you with scientific,
+                <br> experience-backed tips and solutions to help you
+                <br> get the best skincare routine for your skin type 
+                <br>and specific needs. Whether you're looking for 
+                <br>tips to moisturize dry or care for oily skin,
+                <br> we have all the informationand tools you need 
+                <br> to always stay in tip-top shape.
+            </div>
+        </div>
+        
+        <div id="fourth">
+            <div id="login">
+                <h2>Log In</h2>
+            </div>
+
+            <div>
+                <label id="email"> <h4>Email</h4> </label>
+                <input type="text" name="email">
+                <label id="pass"> <h4>Password</h4></label>
+                <input type="number" name="pass"/>
+            </div>
+            <div id="forget">
+                forget password? 
+                <button id="click"> <h6>Enter Here</h6></button>
+            </div>
+
+        </div>
+        <img id="foto" src="https://i.pinimg.com/236x/63/5b/be/635bbef049c34c492a6b8c0bea0ca3ab.jpg"/>
+        <div id="fifth">
+            <div id="info"><h4>How Do You Maintain Your Skin?</h4></div>
+            <div id="box1">
+                <div id="text1"><h3> Oily Skin </h3></div>
+                <ul>
+                    <li>Excess Oil Production </li>
+                    <li> Shiny Appearance </li>
+                    <li> Prone to Acne and Breakouts </li>
+                    <li>Better Protection Against Wrinkles </li>
+                    <li>Seasonal Changes</li>
+                </ul>
+
+
+            </div>
+            <div id="box2">
+                <dic id="text2"> <h3>Dry Skin</h3></dic>
+                <ul>
+                    <li>Flakiness and Peeling </li>
+                    <li>Rough Texture</li>
+                    <li>Sensitivity and Redness</li>
+                    <li>Fine Lines and Wrinkles</li>
+                    <li>Imbalanced Oil Production</li>
+                </ul>
+
+            </div>
+            <div id="box3">
+                <div id="text3"><h3>Combination Skin</h3></div>
+                <ul>
+                    <li>Dry or Normal Cheeks</li>
+                    <li>Larger Pores in the T-Zone</li>
+                    <li>Dual Concerns</li>
+                    <li>Need for a Custom Skincare Routine</li>
+                    <li>Seasonal Changes </li>
+                </ul>
+
+            </div>
+            <div id="box4">
+                <div id="text4"><h3> Normal Skin</h3></div>
+                <ul>
+                    <li> Balanced Oil and Moisture</li>
+                    <li> Invisible or Small Pores</li>
+                    <li>Smooth Texture </li>
+                    <li>No Major Skin Issues </li>
+                    <li>Healthy and Radiant Appearance</li>
+                </ul>
+                
+
+            </div>
+    
+        </div>
+
+   
+   
+    </body>
+    <script>
+        console.log("this is a skin care website")
+
+        let email =document.getElementById("email")
+        let icon=document.getElementsByClassName("icon")
+        login.style.color ="gray"
+
+        icon,addEventListener("click",() => {
+            alert("wellcome to haneen website !!")
+        }) 
+
+    </script>
+
+</html>
